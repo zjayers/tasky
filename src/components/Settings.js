@@ -6,11 +6,11 @@ class Settings extends Component {
 
     this.state = {
       time: props.timer.time,
-      unit: props.timer.unit
+      unit: props.timer.unit,
     };
   }
 
-  onSubmit = e => {
+  onSubmit = (e) => {
     e.preventDefault();
     this.props.handleSubmit(this.state);
   };
@@ -36,9 +36,7 @@ class Settings extends Component {
     return (
       <div style={styles.container}>
         <ul className="collection with-header">
-          <li className="collection-header">
-            Settings
-          </li>
+          <li className="collection-header">Settings</li>
           <form onSubmit={this.onSubmit}>
             <li className="collection-item">
               <p>Initial Duration</p>
@@ -46,7 +44,7 @@ class Settings extends Component {
                 type="number"
                 min="1"
                 value={this.state.time}
-                onChange={e => this.setState({ time: e.target.value })}
+                onChange={(e) => this.setState({ time: e.target.value })}
               />
             </li>
             <li className="collection-item">
@@ -54,7 +52,7 @@ class Settings extends Component {
               <select
                 className="browser-default"
                 value={this.state.unit}
-                onChange={e => this.setState({ unit: e.target.value })}
+                onChange={(e) => this.setState({ unit: e.target.value })}
               >
                 <option value="seconds">Seconds</option>
                 <option value="minutes">Minutes</option>
@@ -62,7 +60,9 @@ class Settings extends Component {
               </select>
             </li>
             <li className="collection-item right">
-              <button type="submit" className={this.buttonStyle()}>Save</button>
+              <button type="submit" className={this.buttonStyle()}>
+                Save
+              </button>
             </li>
           </form>
         </ul>
@@ -77,11 +77,11 @@ class Settings extends Component {
 const styles = {
   container: {
     display: "flex",
-    flexDirection: "column"
+    flexDirection: "column",
   },
   pointer: {
-    cursor: "pointer"
-  }
+    cursor: "pointer",
+  },
 };
 
 export default Settings;

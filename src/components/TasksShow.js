@@ -4,16 +4,16 @@ import "moment-duration-format";
 
 class TasksShow extends Component {
   state = {
-    task: ""
+    task: "",
   };
 
-  handleSubmit = e => {
+  handleSubmit = (e) => {
     e.preventDefault();
     if (this.state.task) {
       const task = {
         id: ~~(Math.random() * 99999),
         totalTime: 0,
-        task: this.state.task
+        task: this.state.task,
       };
       this.props.createTask(task);
       this.setState({ task: "" });
@@ -27,8 +27,7 @@ class TasksShow extends Component {
         <li className="collection-item avatar" key={activeTask.id}>
           <i className="material-icons circle green">grade</i>
           <p className="title">{activeTask.task}</p>
-          <p
-          >{`Total Time: ${moment
+          <p>{`Total Time: ${moment
             .duration(activeTask.totalTime, "seconds")
             .format("hh:mm:ss", { trim: false })}`}</p>
         </li>
@@ -38,7 +37,7 @@ class TasksShow extends Component {
   }
 
   renderTasks() {
-    return this.props.tasks.map(task => {
+    return this.props.tasks.map((task) => {
       return (
         <li className="collection-item avatar" key={task.id}>
           <i
@@ -51,8 +50,7 @@ class TasksShow extends Component {
             grade
           </i>
           <p className="title">{task.task}</p>
-          <p
-          >{`Total Time: ${moment
+          <p>{`Total Time: ${moment
             .duration(task.totalTime, "seconds")
             .format("hh:mm:ss", { trim: false })}`}</p>
           <i
@@ -77,7 +75,7 @@ class TasksShow extends Component {
                 type="text"
                 placeholder="Add a task"
                 value={this.state.task}
-                onChange={e => this.setState({ task: e.target.value })}
+                onChange={(e) => this.setState({ task: e.target.value })}
               />
             </form>
           </li>
@@ -92,11 +90,11 @@ class TasksShow extends Component {
 const styles = {
   container: {
     height: "100%",
-    overflow: "scroll"
+    overflow: "scroll",
   },
   pointer: {
-    cursor: "pointer"
-  }
+    cursor: "pointer",
+  },
 };
 
 export default TasksShow;

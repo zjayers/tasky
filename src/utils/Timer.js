@@ -7,7 +7,7 @@ class Timer {
       duration,
       unit,
       onDisplayChange,
-      onTimerExpiration
+      onTimerExpiration,
     } = this.validateConfigObject(config);
 
     this.initialDuration = this.getInitialDuration(duration, unit);
@@ -81,7 +81,7 @@ class Timer {
     const validUnits = {
       seconds: true,
       minutes: true,
-      hours: true
+      hours: true,
     };
 
     if (!validUnits[unit]) {

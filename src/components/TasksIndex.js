@@ -37,9 +37,7 @@ class TasksIndex extends Component {
     if (!activeTask) {
       return (
         <div style={styles.container}>
-          <h3>
-            No Active tasks.
-          </h3>
+          <h3>No Active tasks.</h3>
         </div>
       );
     }
@@ -60,15 +58,15 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-around",
-    textAlign: "center"
+    textAlign: "center",
   },
   buttonContainer: {
     display: "flex",
-    flexDirection: "column"
+    flexDirection: "column",
   },
   button: {
-    marginBottom: "15px"
-  }
+    marginBottom: "15px",
+  },
 };
 
 export default TasksIndex;

@@ -2,13 +2,22 @@
   "name": "timer",
   "version": "1.0.0",
   "description": "Electron timer app",
+  "author": "Rallycoding",
   "main": "main.js",
   "scripts": {
-    "start": "webpack-dev-server",
+    "build-dev": "webpack -d --mode development --watch",
     "electron": "electron .",
-    "build-dev": "webpack -d --mode development --watch"
+    "start": "webpack-dev-server"
   },
-  "author": "Rallycoding",
+  "dependencies": {
+    "electron": "^9.0.5",
+    "moment": "^2.27.0",
+    "moment-duration-format": "^2.3.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.10.4",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
@@ -19,14 +28,5 @@
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
-  },
-  "dependencies": {
-    "electron": "^9.0.5",
-    "moment": "^2.27.0",
-    "moment-duration-format": "^2.3.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0"
   }
 }

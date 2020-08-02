@@ -1,11 +1,32 @@
-### Getting started
+<h1 align="center">Welcome to timer 👋</h1>
+<p>
+  <a href="https://www.npmjs.com/package/timer" target="_blank">
+    <img alt="Version" src="https://img.shields.io/npm/v/timer.svg">
+  </a>
+</p>
 
-`npm install`
+> Electron timer app
 
-Start dev server:
+## Install
 
-`npm start`
+```sh
+npm install
+```
 
-In a new terminal window:
+## Usage
 
-`npm run electron`
+```sh
+npm run start
+```
+
+## Author
+
+👤 **Rallycoding**
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+---
+
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
