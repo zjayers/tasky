@@ -1,8 +1,7 @@
 # Tasky
-[![GitHub Release](https://img.shields.io/github/release/zjayers/tasky.svg?style=flat)]()
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/zjayers/tasky.svg?style=flat)]()
+[![GitHub Release](https://img.shields.io/github/release/zjayers/tasky.svg?style=flat)](https://github.com/zjayers/tasky/releases)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/zjayers/tasky.svg?style=flat)](https://github.com/zjayers/tasky/pulls)
 [![Issues](https://img.shields.io/github/issues-raw/zjayers/tasky.svg?maxAge=25000)](https://github.com/zjayers/tasky/issues)
-[![MIT License](https://img.shields.io/apm/l/atomic-ui.svg?)](https://github.com/zjayers/tasky/blob/master/LICENSEs)
 
 ## Description
 
