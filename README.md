@@ -1,32 +1,21 @@
-<h1 align="center">Welcome to timer 👋</h1>
-<p>
-  <a href="https://www.npmjs.com/package/timer" target="_blank">
-    <img alt="Version" src="https://img.shields.io/npm/v/timer.svg">
-  </a>
-</p>
+# Tasky
+[![GitHub Release](https://img.shields.io/github/release/zjayers/tasky.svg?style=flat)]()
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/zjayers/tasky.svg?style=flat)]()
+[![Issues](https://img.shields.io/github/issues-raw/zjayers/tasky.svg?maxAge=25000)](https://github.com/zjayers/tasky/issues)
+[![MIT License](https://img.shields.io/apm/l/atomic-ui.svg?)](https://github.com/zjayers/tasky/blob/master/LICENSEs)
 
-> Electron timer app
+## Description
 
-## Install
+> Work in progress
 
-```sh
-npm install
-```
+## Features
+
+> Work in progress
+
+## Installation
+
+> Work in progress
 
 ## Usage
 
-```sh
-npm run start
-```
-
-## Author
-
-👤 **Rallycoding**
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
----
-
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+> Work in progress
